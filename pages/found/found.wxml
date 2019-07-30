@@ -1,0 +1,29 @@
+<view>
+  <view class="title">互联网交流群</view>
+  <view class="body">
+    <view class="leftAction">
+      <image class="ewm" src="{{state.ewm}}"></image>
+    </view>
+    <view class="rightAciton">
+      <view class="list">互联网非技术交流群</view>
+      <view>产品|运营|UI|相关岗位</view>
+      <view>微信群号：
+        <text>1258974663</text>
+      </view>
+      <view><image class="hq" src="/images/red.png"></image>一起收割offer呀</view>
+    </view>
+  </view>
+  <view class="body">
+    <view class="leftAction">
+      <image class="ewm" src="{{state.ewm}}"></image>
+    </view>
+    <view class="rightAciton">
+      <view class="list">互联网技术交流群</view>
+      <view>前端|后台|算法|相关岗位</view>
+      <view>微信群号：
+        <text>1258974663</text>
+      </view>
+      <view><image class="hq" src="/images/red.png"></image>一起收割offer呀</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,31 @@
+/* pages/my/myoffer/myoffer.wxss */
+@import "/template/offer-item/offer-item-template.wxss";
+.wrapper{
+  width:90%;
+  margin: 0 auto;
+}
+.top{
+  height:100rpx;
+  line-height: 100rpx;
+}
+.timg{
+  vertical-align: middle;
+  width:50rpx;
+  height:50rpx;
+}
+.bg{
+  height:90rpx;
+  line-height: 90rpx;
+  background-color: #e5e5e5;
+  padding-left: 5%;
+  color:#515151;
+  margin-bottom: 40rpx;
+}
+.gray text{
+   font-size:24rxp;
+}
+.ximg{
+  vertical-align: middle;
+  width:40rpx;
+  height:40rpx;
+}

@@ -1,0 +1,44 @@
+<view class="wrapper">
+<view class="top" bindtap='toOffer'>
+  <image class="timg" src="/images/fanhui.png"></image>
+  <text>岗位状态更新</text>
+</view>
+<view class="line">
+<view class="circle"></view>
+ <text>{{companyName}}*</text>
+  <text>{{jobName}}</text>
+</view>
+<form  bindsubmit="formSubmit">
+ <view class="section">
+    <view class="leftSection">
+      <text>岗位状态</text>
+    </view>
+    <view class="rightSection">
+      <picker bindchange="bindPickerChange" mode="selector" range-key="name" name="jobstate" value="{{array[cur].index}}" range="{{array}}">
+        <view class="picker">{{array[cur].name}}</view>
+      </picker>
+    </view>
+  </view>
+  <view class="section">
+    <view class="leftSection">
+      <text>截止时间</text>
+    </view>
+    <view class="rightSection">
+      <picker mode="date" start="2019-01-01" end="2021-01-01" bindchange="bindDateChange" name="deadLine">{{date}}</picker>
+    </view>
+  </view>
+  <view class="section">
+    <view class="leftSection">
+      <text>地点</text>
+    </view>
+    <view class="rightSection">
+      <input name="location"  value="{{location}}"  type="text" placeholder="请填写公司面试地点" />
+    </view>
+  </view>
+  <view class="view-wrapper">
+    <button class="btn" formType="submit" bindtap="toOffer">完成</button>
+  </view>
+  </form>
+</view>
+<view class='loadmore loading' wx:if="{{ hasMore }}">正在加载</view>
+<view class='loadmore' wx:else>已经到底了</view>

@@ -1,0 +1,25 @@
+.wrapper{
+  width:90%;
+  margin: 0 auto;
+}
+.top{
+  height:100rpx;
+  line-height: 100rpx;
+}
+.timg{
+  vertical-align: middle;
+  width:50rpx;
+  height:50rpx;
+}
+
+.txt{
+  font-size: 28rpx;
+  margin-bottom: 40rpx;
+}
+.ewm{
+  margin-left: 6%;
+}
+.ewm image{
+  width:90%;
+  height:500rpx;
+}

@@ -1,0 +1,19 @@
+<!--pages/my/myoffer/myoffer.wxml-->
+<import src="/template/offer-item/offer-item-template.wxml"/>
+<view class="wrapper">
+<view class="top" bindtap='toMy'>
+  <image class="timg" src="/images/fanhui.png"></image>
+  <text>我的offer</text>
+</view>
+</view>
+<view class="content">
+  <view class="bg" wx:if="{{flag}}">
+    <image class="ximg" src="/images/xin.png"></image>
+    <text>恭喜您收割以下offer</text>
+  </view>
+<view wx:else>暂时没有收获Offer哦</view>
+   <block wx:for="{{offerList}}" wx:key="id">
+   <template is="offerList" data="{{...item}}"/>
+ </block>
+
+</view>

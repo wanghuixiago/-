@@ -1,0 +1,35 @@
+/* pages/my/my.wxss */
+
+.top{
+  width:100%;
+  height:400rpx;
+  background-color: #1296db;
+}
+.usrimg{
+  padding-top: 30rpx;
+   width:28%;
+   margin: 0 auto;
+}
+.usrimage {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 100rpx;
+}
+.usrname{
+  padding-top: 50rpx;
+  text-align: center;
+  color:#fff;
+}
+.item{
+  height:100rpx;
+  line-height:100rpx;
+  width:90%;
+  margin:0 auto;
+  border-bottom: 1px solid #e5e5e5;
+}
+.imgItem{
+  vertical-align: middle;
+  padding-right: 20rpx;
+  width:50rpx;
+  height:50rpx;
+}

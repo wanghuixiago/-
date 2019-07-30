@@ -1,0 +1,18 @@
+<template name="offerList">
+<view class="offerItem" >
+    <view class="all">
+      <view class="leftAciton">
+        <view class="left0">
+          <text>{{companyName}}*</text>
+          <text>{{jobName}}</text>
+        </view>
+        <view class="left1">
+          <text>{{date}}</text>
+        </view>
+      </view>
+      <view class="rightAciton">
+        <view class="simg"><image src="/images/offerState/status{{stateFlag}}.png"></image></view><text class="gray">{{jobState}}</text>
+      </view>
+    </view>
+  </view>
+  </template>

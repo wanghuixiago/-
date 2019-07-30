@@ -1,0 +1,34 @@
+<view>
+<view class="top">
+   <view class="usrimg">
+    <image class="usrimage" src="{{user.avatarUrl}}"></image>
+   </view>
+    <view class='usrname'>
+   <text class="usrname">{{user.nickName}}</text>
+    </view>
+</view>
+<view class="content">
+   <view class="item" bindtap='toDetail'>
+     <image class='imgItem' src="{{state.offer}}"></image>
+     <text>我的offer</text>
+   </view>
+    <view class="item">
+     <image class='imgItem' src="{{state.love}}"></image>
+     <text>我的收藏</text>
+   </view>
+    <view class="item">
+     <image class='imgItem' src="{{state.article}}"></image>
+     <text>我的文章</text>
+   </view>
+    <view class="item">
+     <image class='imgItem' src="{{state.fupan}}"></image>
+     <text>我的复盘</text>
+   </view>
+    <view class="item" bindtap='toCon'>
+     <image class='imgItem' src="{{state.us}}"></image>
+     <text>联系我们</text>
+   </view>
+</view>
+</view>
+
+<!-- <button open-type="openSetting">打开授权设置页</button> -->

@@ -1,0 +1,40 @@
+/* pages/found/found.wxss */
+.title{
+  border-left:5rpx solid green;
+  margin-left: 20rpx;
+  padding-left: 10rpx;
+}
+.body{
+  display: flex;
+  flex-direction: row;
+  height:320rpx;
+  margin-top: 60rpx;
+  vertical-align: middle;
+}
+.leftAction{
+    width:40%;
+    margin-left:3%;
+}
+.leftAction image{
+  width:93%;
+  height:280rpx;
+}
+.rightAciton{
+  width:57%;
+  display: flex;
+  flex-direction: column;
+}
+.rightAciton view{
+    height:70rpx;
+    line-height: 70rpx;
+    font-size: 32rpx;
+}
+.list{
+   font-size: 42rpx !important;
+}
+.hq{
+  margin-top: 10rpx;
+  width:50rpx;
+  height:50rpx;
+  float: left;
+}

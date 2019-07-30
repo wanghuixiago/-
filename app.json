@@ -1,0 +1,43 @@
+{
+  "pages": [
+  "pages/index/index",
+  "pages/offer/offer",
+    "pages/offer/create/create",
+    "pages/offer/offlist/offlist",
+    "pages/map/map",
+    "pages/my/my",
+    "pages/offer/modify/modify",
+    "pages/found/found",
+    "pages/my/concat/concat",
+    "pages/my/myoffer/myoffer"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "offer进度管理",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "text": "offer管理",
+        "pagePath": "pages/offer/offer",
+        "iconPath": "/images/offer.png",
+        "selectedIconPath": "/images/offer1.png"
+      },
+      {
+        "text": "发现",
+        "pagePath": "pages/found/found",
+        "iconPath": "/images/find.png",
+        "selectedIconPath": "/images/find1.png"
+      },
+      {
+        "text": "我",
+        "pagePath": "pages/my/my",
+        "iconPath": "/images/my.png",
+        "selectedIconPath": "/images/my1.png"
+      }
+    ],
+    "selectedColor": "#1296db"
+  }
+}

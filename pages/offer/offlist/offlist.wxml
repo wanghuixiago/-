@@ -1,0 +1,30 @@
+<!--pages/offer/offlist/offlist.wxml-->
+<view class="wrapper">
+<view class="top" bindtap='toOffer'>
+  <image class="timg" src="/images/fanhui.png"></image>
+  <text>岗位详情</text>
+</view>
+<view class="line">
+<view class="circle"></view>
+  <text>{{companyName}}*</text>
+  <text>{{jobName}}</text>
+</view>
+<view class="line1">
+<text class='item'>岗位状态</text><text>{{jobState}}</text>
+</view>
+<view class="line1">
+<text class='item'>截止时间</text><text>{{deadLine}}</text>
+</view>
+<view class="line">
+<text class='item'>面试地点</text><text>{{location}}</text>
+</view>
+
+ <view class="view-wrapper">
+    <button class="btn"  bindtap="toModify">更新状态</button>
+  </view>
+
+   <view class="view-wrapper">
+    <button class="btn"  bindtap="toDelete">删除本岗位</button>
+  </view>
+
+</view>

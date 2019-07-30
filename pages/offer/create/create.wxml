@@ -1,0 +1,98 @@
+<!--pages/offer/create/create.wxml-->
+
+<view class="title">添加岗位信息</view>
+
+<form bindsubmit="formSubmit">
+  <view class="section">
+    <view class="leftSection">
+      <text>公司名称</text>
+    </view>
+    <view class="rightSection">
+      <input name="companyName" type="text" placeholder="请填写公司名称" />
+    </view>
+  </view>
+  <view class="section">
+    <view class="leftSection">
+      <text>岗位类型</text>
+    </view>
+    <view class="rightSection">
+      <picker bindchange="bindTypeChange" mode="selector" range-key="name" name="jobType" value="{{arrayType[cur1].type}}" range="{{arrayType}}">
+        <view class="picker">{{arrayType[cur1].name}}</view>
+      </picker>
+    </view>
+  </view>
+  <view class="section">
+    <view class="leftSection">
+      <text>岗位名称</text>
+    </view>
+    <view class="rightSection">
+      <input name="jobName" type="text" placeholder="请填写岗位名称" />
+    </view>
+  </view>
+  <view class="section">
+    <view class="leftSection">
+      <text>优先级</text>
+    </view>
+    <view class="rightSection">
+
+      <radio-group class="radio-group" bindchange="radioChange" name="level">
+        低
+        <label class="radio" wx:for="{{items}}">
+          <radio color="{{item.color}}" value="{{item.name}}" checked="{{item.checked}}" /> {{item.value}}
+        </label> 高
+      </radio-group>
+
+    </view>
+  </view>
+  <view class="section">
+    <view class="leftSection">
+      <text>岗位状态</text>
+    </view>
+    <view class="rightSection">
+      <picker bindchange="bindPickerChange" mode="selector" range-key="name" name="jobState" value="{{array[cur].index}}" range="{{array}}">
+        <view class="picker">{{array[cur].name}}</view>
+      </picker>
+    </view>
+  </view>
+  <view class="section">
+    <view class="leftSection">
+      <text>截止时间</text>
+    </view>
+    <view class="rightSection">
+      <picker mode="date"  start="2018-01-01" end="2021-01-01" bindchange="bindDateChange" name="deadLine">{{date}}</picker>
+    </view>
+  </view>
+  <view class="section">
+    <view class="leftSection">
+      <text>地点</text>
+    </view>
+    <view class="rightSection">
+      <input name="location" type="text" placeholder="请填写公司面试地点" />
+    </view>
+  </view>
+  <!-- <view class="line1">
+    <view class="leftSection">
+      <text>上传照片测试</text>
+    </view>
+    <!-- <view class="rightSection">
+      <textarea name="add" placeholder="请输入备注"></textarea>
+    </view> -->
+    <!-- <view class="rightSection"> -->
+      <!-- <image src="{{tempFilePaths}}" style="width: 100px; height: 100px; background-color: #eeeeee;" mode="{{mode}}"  data-index="{{index}}"   bindtap="seeBigImg"> 
+     </image> -->
+     <!-- <view wx:for="{{imgSrcs}}">
+      <image  src="{{item.value}}" style="width: 100px; height: 100px; background-color: #eeeeee; " mode="{{mode}}"  data-index="{{index}}"   bindtap="seeBigImg"> 
+     </image>
+    
+      <cover-image class="placeImg"  wx:if="{{isAdd}}" src="/images/add.png"  bindtap='bindImg'/>
+    </view>
+    </view>
+  </view>  -->
+  <view class="view-wrapper">
+    <button class="btn" formType="submit" bindtap="toIndex">完成</button>
+  </view>
+</form>
+
+<view class="warn" wx:if="{{isSubmit}}">
+  {{warn}}
+</view>

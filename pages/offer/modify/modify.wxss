@@ -1,0 +1,59 @@
+/* pages/offer/modify/modify.wxss */
+.wrapper{
+  width:100%;
+}
+.top{
+  height:100rpx;
+  line-height: 100rpx;
+  padding-left: 2%;
+  background-color: #eaeaea;
+}
+.timg{
+  vertical-align: middle;
+  width:50rpx;
+  height:50rpx;
+}
+.circle{
+  border-radius:20rpx;
+  width:40rpx;
+  height:40rpx;
+  background-color:#1296db;
+  float:left;
+  margin-top: 30rpx;
+  margin-left: 2%;
+  margin-right: 3%;
+}
+.line{
+  border-bottom:3px solid #ccc;
+  height:100rpx;
+  line-height: 100rpx;
+}
+.section{
+  width:95%;
+  margin:0 auto;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 3px solid #ccc;
+  height:90rpx;
+  line-height:90rpx;
+  padding: 10rpx 0 10rpx 0;
+}
+.leftSection{
+  width:30%;
+}
+.rightSection{
+  width:70%;
+}
+.rightSection input{
+  height:90rpx;
+  line-height:90rpx;
+}
+.view-wrapper{
+ margin-top: 80rpx;
+}
+.btn{
+  width:95%;
+  margin:0 auto;
+  background-color: #1296db;
+  color:#fff;
+}

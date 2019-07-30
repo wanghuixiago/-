@@ -1,0 +1,54 @@
+/* pages/offer/offer.wxss */
+@import "/template/offer-item/offer-item-template.wxss";
+
+.top{
+  width:100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  height:140rpx;
+  line-height: 140rpx;
+}
+.iconItem{
+  width:100%;
+  margin:0 auto;
+  text-align: center;
+}
+.iconItem text{
+  font-size: 32rpx
+}
+.iconItem image{
+  width:40rpx;
+  height:40rpx;
+  vertical-align: middle;
+}
+.model,.model1{
+  width:30%;
+ margin:0 auto;
+ text-align: center;
+ margin-top: -60rpx;
+  background-color: #cfcfcf;
+  opacity: 0.5;
+  color:#fff;
+    padding:2px;
+     position:absolute;
+}
+
+
+#byLevel,#byDate{
+   padding:2px;
+  margin:0;
+  height:43rpx;
+  line-height: 43rpx;
+}
+.model1 view{
+ padding:2px;
+  margin:0;
+  height:43rpx;
+  line-height: 43rpx;
+}
+.model text,.model1 text{
+  padding:2px;
+  margin:0;
+    font-size: 25rpx;
+}

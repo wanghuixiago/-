@@ -1,0 +1,44 @@
+
+.offerItem{
+  width:90%;
+  margin: 0 auto;
+  margin-bottom: 30rpx;
+  border: 2px solid #e5e5e5;
+  border-radius:10rpx;
+  box-shadow:5px 5px 10px #e5e5e5;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+}
+.all{
+  display: flex;
+  flex-direction: row;
+  width:90%;
+  margin:0 auto;
+  font-size: 32rpx
+}
+.leftAciton{
+  width:65%;
+  display: flex;
+  flex-direction: column;
+}
+.left1{
+  margin-top: 10rpx;
+}
+.rightAciton{
+   width:35%;
+   text-align: center;
+   padding-top: 20rpx;
+}
+.simg{
+  width:90%;
+  height:auto;
+}
+.simg image{
+  float:left;
+  width:33%;
+  height:55rpx;
+}
+.gray{
+  color: #4e4e4e;
+}

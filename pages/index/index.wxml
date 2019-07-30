@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+<view>首页</view>
+ 
+<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" ></image>
+<view class="userinfo-nickname">{{userInfo.nickName}}</view> 
+
+<button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">
+  授权登录
+</button> 
+</view>

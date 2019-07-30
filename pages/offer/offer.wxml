@@ -1,0 +1,49 @@
+<!--pages/offer/offer.wxml-->
+<import src="/template/offer-item/offer-item-template.wxml" />
+
+<view>
+  <view class="top">
+    <view  catchtouchmove="ture" class="iconItem" bindtap='toFilter'>
+      <text>筛选</text>
+      <image src="{{state.select}}"></image>
+      <view class="model1" wx:if="{{filterFlag}}">
+        <view catchtap='pro1'>
+          <text>未投递</text>
+        </view>
+        <view catchtap='pro2'>
+          <text>流程中</text>
+        </view>
+        <view catchtap='pro3'>
+          <text>获得offer</text>
+        </view>
+      </view>
+
+    </view>
+
+    <view class="iconItem" bindtap='toSort'>
+      <text>排序</text>
+      <image src="{{state.sort}}"></image>
+      <view class="model" wx:if="{{levelFlag}}">
+        <view id="byLevel" bindtap='levelSort'>
+          <text>优先级</text>
+        </view>
+        <view id="byDate" bindtap='dateSort'>
+          <text>日期由远到近</text>
+        </view>
+      </view>
+    </view>
+    <view class="iconItem" bindtap='toCreate'>
+      <text>添加岗位</text>
+      <image src="{{state.add}}"></image>
+    </view>
+
+  </view>
+  <view>
+
+  <block wx:for="{{offerList}}" wx:key="id">
+    <view  class="ln" catchtap='toOfferDetail' data-postId="{{item.post_id}}">
+      <template is="offerList" data="{{...item}}" />
+    </view>
+  </block>
+</view>
+</view>

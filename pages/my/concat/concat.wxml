@@ -1,0 +1,12 @@
+<view class="wrapper">
+<view class="top" bindtap='toMy'>
+  <image class="timg" src="/images/fanhui.png"></image>
+  <text>联系我们</text>
+</view>
+<view class="content">
+<view class="txt">您的建议是对我们最大的鼓励~~~</view>
+<view class="ewm">
+ <image  src="/images/ewm.png"></image>
+ </view>
+</view>
+</view>
